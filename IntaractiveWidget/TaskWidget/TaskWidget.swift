@@ -18,7 +18,7 @@ struct Provider: TimelineProvider {
         completion(entry)
     }
 
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(in context: Context, completion: @escaping (Timeline<TaskEntry>) -> ()) {
         // Fetch data
         let latestTasks = Array(TaskDataModel.shared.tasks.prefix(3))
         let latestEntries = [TaskEntry(lastThreeTasks: latestTasks)]
@@ -34,13 +34,9 @@ struct TaskEntry: TimelineEntry {
 
 struct TaskWidgetEntryView : View {
     var entry: Provider.Entry
-    @State var isPresented = false
 
     var body: some View {
         VStack {
-            Text("Task's")
-                .fontWeight(.semibold)
-                .padding(.bottom, 10)
 
             VStack(alignment: .leading, spacing: 6, content: {
                 if entry.lastThreeTasks.isEmpty {
@@ -51,30 +47,46 @@ struct TaskWidgetEntryView : View {
                 } else {
                     ForEach(entry.lastThreeTasks) { task in
                         HStack(spacing: 6) {
-
-                            Button(intent: ToggleStateIntent(id: task.id)) {
-
-                                Image(systemName: task.isCompleted ? "checkmark.circle.fill" : "circle")
-                                    .foregroundStyle(.blue)
-
-
+                            if task.isCompleted {
+                                ContentView2(entry: entry)
                             }
-                            .buttonStyle(.plain)
-                            
+                            if !task.isCompleted {
 
-                            VStack(alignment: .leading, spacing: 4, content: {
-                                Text(task.taskTitle)
-                                    .textScale(.secondary)
-                                    .lineLimit(1)
-                                    .strikethrough(task.isCompleted, pattern: .solid, color: .primary)
+                                VStack(alignment: .leading, spacing: 4, content: {
 
-                                Divider()
-                            })
+
+                                    Button(intent: ToggleStateIntent(id: task.id)) {
+
+                                        VStack {
+                                            HStack {
+                                                Image(task.isCompleted ? "pain1" : "pain1")
+                                                    .foregroundStyle(.blue)
+
+                                                Image(task.isCompleted ? "pain2" : "pain2")
+                                                    .foregroundStyle(.blue)
+                                            }
+                                            HStack {
+                                                Image(task.isCompleted ? "pain3" : "pain3")
+                                                    .foregroundStyle(.blue)
+
+                                                Image(task.isCompleted ? "pain4" : "pain4")
+                                                    .foregroundStyle(.blue)
+                                            }
+                                        }
+
+
+
+                                    }
+                                    .buttonStyle(.plain)
+
+                                })
+                            }
                         }
 
                         if task.id != entry.lastThreeTasks.last?.id {
                             Spacer(minLength: 0)
                         }
+                        
                     }
                 }
             })

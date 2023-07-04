@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct ContentView2: View {
+    var entry: Provider.Entry
     var body: some View {
-        Text("Good")
+        ForEach(entry.lastThreeTasks) { task in
+            Button(intent: ToggleStateIntent(id: task.id)) {
+                
+                Image(systemName: task.isCompleted ? "chevron.left" : "circle")
+                    .foregroundStyle(.blue)
+                
+            }
+            .buttonStyle(.plain)
+            Text("記録しました")
+        }
     }
 }
 
-#Preview {
-    ContentView2()
-}

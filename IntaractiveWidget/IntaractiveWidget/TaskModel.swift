@@ -17,9 +17,7 @@ class TaskDataModel {
     static let shared = TaskDataModel()
 
     var tasks: [TaskModel] = [
-        .init(taskTitle: "Record Video"),
-        .init(taskTitle: "Edit Video"),
-        .init(taskTitle: "Publish it")
+        .init(taskTitle: "Record Video")
 
     ]
 }

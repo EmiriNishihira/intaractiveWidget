@@ -23,6 +23,7 @@
 		FDA6303E2A54685C00E41E7C /* TaskWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9D82A54204F00A2EFB8 /* TaskWidget.swift */; };
 		FDA6303F2A54686500E41E7C /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9E42A5421B100A2EFB8 /* TaskModel.swift */; };
 		FDA630402A54686D00E41E7C /* ToggleStateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9E72A5429C000A2EFB8 /* ToggleStateIntent.swift */; };
+		FDA630412A546B5A00E41E7C /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9EA2A545BAE00A2EFB8 /* ContentView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,6 +253,7 @@
 				FDA6303F2A54686500E41E7C /* TaskModel.swift in Sources */,
 				FDA6303E2A54685C00E41E7C /* TaskWidget.swift in Sources */,
 				FDA6303D2A54684F00E41E7C /* TaskWidgetBundle.swift in Sources */,
+				FDA630412A546B5A00E41E7C /* ContentView2.swift in Sources */,
 				FDA630402A54686D00E41E7C /* ToggleStateIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
