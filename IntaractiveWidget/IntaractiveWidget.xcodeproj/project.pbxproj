@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD73E9C22A541FEE00A2EFB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD73E9C12A541FEE00A2EFB8 /* Assets.xcassets */; };
+		FD73E9C52A541FEE00A2EFB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD73E9C42A541FEE00A2EFB8 /* Preview Assets.xcassets */; };
+		FD73E9D22A54204F00A2EFB8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD73E9D12A54204F00A2EFB8 /* WidgetKit.framework */; };
+		FD73E9D42A54204F00A2EFB8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD73E9D32A54204F00A2EFB8 /* SwiftUI.framework */; };
+		FD73E9DB2A54205000A2EFB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD73E9DA2A54205000A2EFB8 /* Assets.xcassets */; };
+		FD73E9DF2A54205000A2EFB8 /* TaskWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FD73E9CF2A54204E00A2EFB8 /* TaskWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD73E9E62A54253500A2EFB8 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9E42A5421B100A2EFB8 /* TaskModel.swift */; };
+		FD73E9E92A542D8200A2EFB8 /* ToggleStateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9E72A5429C000A2EFB8 /* ToggleStateIntent.swift */; };
+		FD73E9EC2A545DEE00A2EFB8 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9EA2A545BAE00A2EFB8 /* ContentView2.swift */; };
+		FD86719F2A54649200FAA706 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9BF2A541FED00A2EFB8 /* ContentView.swift */; };
+		FDA630372A5466DF00E41E7C /* TaskWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9D82A54204F00A2EFB8 /* TaskWidget.swift */; };
+		FDA6303C2A54684B00E41E7C /* TaskWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9D62A54204F00A2EFB8 /* TaskWidgetBundle.swift */; };
+		FDA6303D2A54684F00E41E7C /* TaskWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9D62A54204F00A2EFB8 /* TaskWidgetBundle.swift */; };
+		FDA6303E2A54685C00E41E7C /* TaskWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9D82A54204F00A2EFB8 /* TaskWidget.swift */; };
+		FDA6303F2A54686500E41E7C /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9E42A5421B100A2EFB8 /* TaskModel.swift */; };
+		FDA630402A54686D00E41E7C /* ToggleStateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E9E72A5429C000A2EFB8 /* ToggleStateIntent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD73E9DD2A54205000A2EFB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD73E9B22A541FED00A2EFB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD73E9CE2A54204E00A2EFB8;
+			remoteInfo = TaskWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD73E9E32A54205000A2EFB8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD73E9DF2A54205000A2EFB8 /* TaskWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD73E9BA2A541FED00A2EFB8 /* IntaractiveWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntaractiveWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD73E9BD2A541FED00A2EFB8 /* IntaractiveWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntaractiveWidgetApp.swift; sourceTree = "<group>"; };
+		FD73E9BF2A541FED00A2EFB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD73E9C12A541FEE00A2EFB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD73E9C42A541FEE00A2EFB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD73E9CF2A54204E00A2EFB8 /* TaskWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TaskWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD73E9D12A54204F00A2EFB8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FD73E9D32A54204F00A2EFB8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FD73E9D62A54204F00A2EFB8 /* TaskWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidgetBundle.swift; sourceTree = "<group>"; };
+		FD73E9D82A54204F00A2EFB8 /* TaskWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWidget.swift; sourceTree = "<group>"; };
+		FD73E9DA2A54205000A2EFB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD73E9DC2A54205000A2EFB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD73E9E42A5421B100A2EFB8 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		FD73E9E72A5429C000A2EFB8 /* ToggleStateIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStateIntent.swift; sourceTree = "<group>"; };
+		FD73E9EA2A545BAE00A2EFB8 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD73E9B72A541FED00A2EFB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD73E9CC2A54204E00A2EFB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD73E9D42A54204F00A2EFB8 /* SwiftUI.framework in Frameworks */,
+				FD73E9D22A54204F00A2EFB8 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD73E9B12A541FED00A2EFB8 = {
+			isa = PBXGroup;
+			children = (
+				FD73E9BC2A541FED00A2EFB8 /* IntaractiveWidget */,
+				FD73E9D52A54204F00A2EFB8 /* TaskWidget */,
+				FD73E9D02A54204F00A2EFB8 /* Frameworks */,
+				FD73E9BB2A541FED00A2EFB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD73E9BB2A541FED00A2EFB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD73E9BA2A541FED00A2EFB8 /* IntaractiveWidget.app */,
+				FD73E9CF2A54204E00A2EFB8 /* TaskWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD73E9BC2A541FED00A2EFB8 /* IntaractiveWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FD73E9BD2A541FED00A2EFB8 /* IntaractiveWidgetApp.swift */,
+				FD73E9BF2A541FED00A2EFB8 /* ContentView.swift */,
+				FD73E9C12A541FEE00A2EFB8 /* Assets.xcassets */,
+				FD73E9C32A541FEE00A2EFB8 /* Preview Content */,
+				FD73E9E42A5421B100A2EFB8 /* TaskModel.swift */,
+				FD73E9EA2A545BAE00A2EFB8 /* ContentView2.swift */,
+			);
+			path = IntaractiveWidget;
+			sourceTree = "<group>";
+		};
+		FD73E9C32A541FEE00A2EFB8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD73E9C42A541FEE00A2EFB8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD73E9D02A54204F00A2EFB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD73E9D12A54204F00A2EFB8 /* WidgetKit.framework */,
+				FD73E9D32A54204F00A2EFB8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD73E9D52A54204F00A2EFB8 /* TaskWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FD73E9D62A54204F00A2EFB8 /* TaskWidgetBundle.swift */,
+				FD73E9D82A54204F00A2EFB8 /* TaskWidget.swift */,
+				FD73E9DA2A54205000A2EFB8 /* Assets.xcassets */,
+				FD73E9DC2A54205000A2EFB8 /* Info.plist */,
+				FD73E9E72A5429C000A2EFB8 /* ToggleStateIntent.swift */,
+			);
+			path = TaskWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD73E9B92A541FED00A2EFB8 /* IntaractiveWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD73E9C82A541FEE00A2EFB8 /* Build configuration list for PBXNativeTarget "IntaractiveWidget" */;
+			buildPhases = (
+				FD73E9B62A541FED00A2EFB8 /* Sources */,
+				FD73E9B72A541FED00A2EFB8 /* Frameworks */,
+				FD73E9B82A541FED00A2EFB8 /* Resources */,
+				FD73E9E32A54205000A2EFB8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD73E9DE2A54205000A2EFB8 /* PBXTargetDependency */,
+			);
+			name = IntaractiveWidget;
+			productName = IntaractiveWidget;
+			productReference = FD73E9BA2A541FED00A2EFB8 /* IntaractiveWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD73E9CE2A54204E00A2EFB8 /* TaskWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD73E9E02A54205000A2EFB8 /* Build configuration list for PBXNativeTarget "TaskWidgetExtension" */;
+			buildPhases = (
+				FD73E9CB2A54204E00A2EFB8 /* Sources */,
+				FD73E9CC2A54204E00A2EFB8 /* Frameworks */,
+				FD73E9CD2A54204E00A2EFB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaskWidgetExtension;
+			productName = TaskWidgetExtension;
+			productReference = FD73E9CF2A54204E00A2EFB8 /* TaskWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD73E9B22A541FED00A2EFB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FD73E9B92A541FED00A2EFB8 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FD73E9CE2A54204E00A2EFB8 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = FD73E9B52A541FED00A2EFB8 /* Build configuration list for PBXProject "IntaractiveWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD73E9B12A541FED00A2EFB8;
+			productRefGroup = FD73E9BB2A541FED00A2EFB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD73E9B92A541FED00A2EFB8 /* IntaractiveWidget */,
+				FD73E9CE2A54204E00A2EFB8 /* TaskWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD73E9B82A541FED00A2EFB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD73E9C52A541FEE00A2EFB8 /* Preview Assets.xcassets in Resources */,
+				FD73E9C22A541FEE00A2EFB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD73E9CD2A54204E00A2EFB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD73E9DB2A54205000A2EFB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD73E9B62A541FED00A2EFB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA6303F2A54686500E41E7C /* TaskModel.swift in Sources */,
+				FDA6303E2A54685C00E41E7C /* TaskWidget.swift in Sources */,
+				FDA6303D2A54684F00E41E7C /* TaskWidgetBundle.swift in Sources */,
+				FDA630402A54686D00E41E7C /* ToggleStateIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD73E9CB2A54204E00A2EFB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD73E9E62A54253500A2EFB8 /* TaskModel.swift in Sources */,
+				FDA630372A5466DF00E41E7C /* TaskWidget.swift in Sources */,
+				FDA6303C2A54684B00E41E7C /* TaskWidgetBundle.swift in Sources */,
+				FD86719F2A54649200FAA706 /* ContentView.swift in Sources */,
+				FD73E9EC2A545DEE00A2EFB8 /* ContentView2.swift in Sources */,
+				FD73E9E92A542D8200A2EFB8 /* ToggleStateIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD73E9DE2A54205000A2EFB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD73E9CE2A54204E00A2EFB8 /* TaskWidgetExtension */;
+			targetProxy = FD73E9DD2A54205000A2EFB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD73E9C62A541FEE00A2EFB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD73E9C72A541FEE00A2EFB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD73E9C92A541FEE00A2EFB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IntaractiveWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = B9WD868NNN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emiri.IntaractiveWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD73E9CA2A541FEE00A2EFB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IntaractiveWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = B9WD868NNN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emiri.IntaractiveWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD73E9E12A54205000A2EFB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B9WD868NNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TaskWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emiri.IntaractiveWidget.TaskWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD73E9E22A54205000A2EFB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B9WD868NNN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TaskWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emiri.IntaractiveWidget.TaskWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD73E9B52A541FED00A2EFB8 /* Build configuration list for PBXProject "IntaractiveWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD73E9C62A541FEE00A2EFB8 /* Debug */,
+				FD73E9C72A541FEE00A2EFB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD73E9C82A541FEE00A2EFB8 /* Build configuration list for PBXNativeTarget "IntaractiveWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD73E9C92A541FEE00A2EFB8 /* Debug */,
+				FD73E9CA2A541FEE00A2EFB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD73E9E02A54205000A2EFB8 /* Build configuration list for PBXNativeTarget "TaskWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD73E9E12A54205000A2EFB8 /* Debug */,
+				FD73E9E22A54205000A2EFB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD73E9B22A541FED00A2EFB8 /* Project object */;
+}
